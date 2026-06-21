@@ -32,7 +32,7 @@ a {
   background: #7CFF59;
   color: #000;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   padding: 18px 40px;
   border-radius: 9999px;
   transition: 0.3s;
@@ -776,13 +776,13 @@ a {
 }
 .fv-text {
   order: 2;
-  padding:0 40px;
+  padding:0 20px;
 }
 .fv-image img {
   height: auto;
 }
 .fv-title-main {
-  font-size: 24px;
+  font-size: 22px;
 }
 .fv-title-sub {
   font-size: 32px;
@@ -793,6 +793,8 @@ a {
 }
 .fv-button-area {
   text-align: center;
+  display:block;
+  width:100%;
 }
 /* ==========================
    悩みセクション
@@ -805,14 +807,14 @@ a {
   font-size: 34px;
 }
 .problem-list li{
-  font-size: 18px;
+  font-size: 16px;
 }
 .problem-list li::before {
   font-size: 20px;
   top: -3px;
 }
 .problem-text p {
-  font-size: 22px;
+  font-size: 18px;
 }
 .sp-only {
   display: block;
@@ -836,17 +838,18 @@ a {
   margin-bottom: 30px;
 }
 .reason-number {
-  font-size: 24px;
+  font-size: 18px;
 }
 .reason-card-title {
-  font-size: 28px;
+  font-size: 20px;
   margin-bottom: 32px;
 }
 .reason-card {
   width: 100%;
+  box-sizing: border-box;
 }
 .reason-card p {
-  font-size: 22px;
+  font-size: 16px;
 }
 /* ==========================
    Before After セクション
@@ -860,10 +863,13 @@ a {
   max-width: 340px;
 }
 .before-after .section-title {
-  font-size: 34px;
+  font-size: 28px;
+}
+.before-after .section-subtitle {
+  font-size: 20px;
 }
 .before-after-info p {
-  font-size: 18px;
+  font-size: 16px;
 }
 .sp-only {
   display: block;
@@ -875,11 +881,18 @@ a {
   grid-template-columns: 1fr;
 }
 .voice .section-title {
-  font-size: 32px;
+  font-size: 24px;
   text-align: left;
 }
+.voice .section-subtitle {
+  font-size: 20px;
+  text-align: left;
+}
+.voice-card{
+  padding: 20px;
+}
 .voice-text{
-  font-size:17px;
+  font-size:15px;
 }
 .sp-only {
   display: block;
@@ -895,11 +908,26 @@ a {
   width: 100%;
   max-width: 320px;
 }
+.plan-notes{
+  font-size:14px;
+}
+.plan-message{
+  font-size:18px;
+}
 /* ==========================
    体験の流れ
 ========================== */
 .flow-list {
   width: 100%;
+}
+.flow-item{
+  gap:20px;
+}
+.flow-item::after{
+  left:-10px;
+}
+.flow-number{
+  margin-left:-20px;
 }
 .flow-heading {
   display: flex;
@@ -907,10 +935,20 @@ a {
   gap: 8px;
   margin-bottom: 16px;
 }
+.section-title{
+  font-size:24px;
+}
+.section-subtitle{
+  font-size: 18px;
+}
 .flow-title {
-  font-size: 20px;
+  font-size: 16px;
+}
+.flow-text{
+  font-size: 15px;
 }
 .flow-step {
+  font-size: 18px;
   margin-bottom: 0;
 }
 .sp-only {
@@ -920,18 +958,33 @@ a {
    CTAセクション
 ========================== */
 .cta-title {
-  font-size: 34px;
+  font-size: 24px;
 }
 .cta-text p {
-  font-size: 20px;
+  font-size: 18px;
+}
+.cta-button{
+  display:block;
+  width:100%;
+  box-sizing:border-box;
+  white-space:nowrap;
 }
 .cta .cta-button {
-  font-size: 20px;
+  font-size: 16px;
   padding: 20px 40px;
+  display:block;
+  width:100%;
 }
 .cta-list li::before{
-  font-size: 24px;
-  top: -5px;
+  font-size: 16px;
+  top: -3px;
+}
+.cta-list li{
+  font-size:16px;
+  padding-left: 24px;
+}
+.cta-note{
+  font-size: 16px;
 }
 /* ==========================
    フッター
